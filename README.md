@@ -35,7 +35,7 @@ A cheat sheet contaning some useful bash commands and explanations
 | grep | search text | Find text in a file | `grep "error" logfile.log` |
 | find | locate files | Search for files by name | `find /home -name "*.txt"` |
 | locate | locate files | Quickly find files (requires `updatedb`) | `locate myfile.txt` |
-| history | command history | Show command history | `history | grep "git"` |
+| history | command history | Show command history | `history grep "git"` |
 | alias | create shortcut | Create a shortcut for a command | `alias ll="ls -la"` |
 | unalias | remove alias | Remove an alias | `unalias ll` |
 | chmod | change permissions | Modify file permissions | `chmod 755 script.sh` |
@@ -62,16 +62,16 @@ A cheat sheet contaning some useful bash commands and explanations
 | bg | resume job | Resume a background process | `bg %1` |
 | fg | foreground job | Bring a background job to the foreground | `fg %1` |
 | nohup | run process | Run a command that won’t stop on logout | `nohup myscript.sh &` |
-| xargs | process list | Convert input to arguments | `echo "file1 file2" | xargs rm` |
+| xargs | process list | Convert input to arguments | `echo "file1 file2" xargs rm` |
 | sed | stream editor | Replace text in a file | `sed 's/old/new/g' file.txt` |
 | awk | text processing | Extract data from a file | `awk '{print $2}' file.txt` |
 | cut | extract fields | Extract fields from lines | `cut -d':' -f1 /etc/passwd` |
-| tr | translate | Replace characters | `echo "hello" | tr 'a-z' 'A-Z'` |
+| tr | translate | Replace characters | `echo "hello" tr 'a-z' 'A-Z'` |
 | diff | compare files | Show differences between files | `diff file1.txt file2.txt` |
 | sort | sort lines | Sort file contents | `sort myfile.txt` |
-| uniq | unique lines | Remove duplicate lines | `sort myfile.txt | uniq` |
+| uniq | unique lines | Remove duplicate lines | `sort myfile.txt uniq` |
 | wc | word count | Count words, lines, and characters | `wc -l file.txt` |
-| tee | write & print | Write output to file and print | `ls | tee output.txt` |
+| tee | write & print | Write output to file and print | `ls tee output.txt` |
 | sleep | delay execution | Pause execution for a duration | `sleep 5` |
 | time | measure time | Measure execution time | `time ls` |
 | yes | repeat input | Repeat a string until interrupted | `yes "hello"` |
