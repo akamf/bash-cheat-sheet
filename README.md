@@ -1,8 +1,5 @@
-# bash-cheat-sheet
-A cheat sheet containg some useful bash commands and explanations
-
-
 # Bash Cheat Sheet
+A cheat sheet contaning some useful bash commands and explanations
 
 | cmd | meaning | explanation | example use |
 | --- | --- | --- | --- |
